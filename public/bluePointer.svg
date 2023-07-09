@@ -1,0 +1,10 @@
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="blue"
+            viewBox="0 0 7 14"
+          >
+            <path
+              fill="#3992FF"
+              d="M0 0h7v9.249a2 2 0 01-.495 1.316L3.5 14 .495 10.566A2 2 0 010 9.248V0z"
+            ></path>
+          </svg>

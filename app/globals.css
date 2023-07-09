@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,14 +14,43 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+@font-face {
+  font-family: 'Copyright Klim Type Foundry';
+  src: url('../public/fonts/FoundersGrotesk-Bold.eot');
+  src: url('../public/fonts/FoundersGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/FoundersGrotesk-Bold.woff2') format('woff2'),
+    url('../public/fonts/FoundersGrotesk-Bold.woff') format('woff'),
+    url('../public/fonts/FoundersGrotesk-Bold.ttf') format('truetype'),
+    url('../public/fonts/FoundersGrotesk-Bold.svg#FoundersGrotesk-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+.founder {
+  font-family: 'Copyright Klim Type Foundry';
+}
+
+.codeblock-line::after{
+  content: "\a";
+}
+
+.codeblock-line span::after{
+  content: " ";
+}
+
+span .noSpace::after {
+  content: "";
 }
